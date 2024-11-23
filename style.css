@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'RUST';
+    src: url(rust/Rust.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+body{
+    background-color: ; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    background-color: #1e2733;
+}
+#banner{
+    width: 100%;
+    opacity: 50%;
+    border-radius: 10px;
+    position: relative;
+}
+header h1{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    font-size: 100px;
+    font-family: 'RUST';
+}
+nav a{
+    margin-left: 10px;
+    display: inline-block;    
+    border: 2px solid ;
+    background-color: ;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+a{
+    color: #6D733F;
+}
+a:hover{
+    color#6D733F
+}
+section{
+    position: relative;
+
+    background-color: #4F238C;
+    color: #E4F277;
+    border-radius: 20px;
+    margin:();
+}    
+#section_rust{
+    position: relative;
+    top: 20px;
+}
+
+
+
+
+
+/*https://www.color-hex.com/color-palette/14903
+#1e2020
+#ce422b
+#f6eae0
+#f6eae0
+#1e2020
+*/
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.jpeg" type="image/x-con">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registro RUSTKIPEDIA</title>
+</head>
+<body>
+    <h1>Regístrate</h1>
+    <form action="" method="">  
+        <fieldset id="datos_personales">
+        <label for="user">Nombre</label>
+        <input placeholder="Nombre" type="text" id="user" name="usuario">        
+        <br/>
+        <label for="apel1">Primer apellido</label>
+        <input placeholder="Primer apellido" type="text" id="apel1" name="apel1">        
+        <br/>
+        <label for="apel2">Segundo apellido</label>
+        <input placeholder="Segundo apellido" type="text" id="apel2" name="apel2">        
+        <br/>
+        <label for="fec_nac">Fecha de nacimiento</label>
+        <input type="date" id="fec_nac" name="fec_nac" min="1990-12-31" max="2024-11-23">        
+        <br/>
+        <label for="u_mail">Correo electrónico</label>
+        <input type="mail" placeholder="Correo electrónico" id="u_mail" name="u_mail">
+        <br />
+        <label for="u_name">Nombre de usuario</label>
+        <input type="text" placeholder="Nombre de usuario" id="u_name" name="u_name">
+    </fieldset>
+    <br />
+    <fieldset id="passwd">
+        <label for="passwd1">Contraseña</label>
+        <input placeholder="Contraseña" type="password" id="passwd" name="passwd">        
+        <br/>
+        <label for="rpasswd">Repite Contraseña</label>
+        <input placeholder="Repite contraseña" type="password" id="rpasswd" name="rpasswd">        
+        <br/>
+    </fieldset>
+    <br />
+        <label for="u_terms">Acepto los <a href="">términos y condiciones</a></label>
+        <input type="radio" id="u_terms">
+    <br />
+    <br/>
+        <button id="envio" type="submit">Enviar</button>
+    
+    </form>  
+</body>
+</html>
