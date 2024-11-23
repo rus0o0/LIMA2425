@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>RUSTKIPEDIA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpeg" type="image/x-con">
 </head>
-<body style="background-color: lightblue; font: 100% sans-serif;"><!--intro, wipes, tier, rat towns, raideos.-->
-    <center>
-        <h1>RUSTKIPEDIA</h1>
-    </center>
-    <img src="banner.jpg" alt="portada de rustkipedia" width="100%" style="display: block; margin: auto;">
+<body>
+    <header>
+    
+        <h1 id="header_h1">RUSTKIPEDIA</h1>
+        <button id="login" name="login" onclick="location.href='login.html'">Entrar</button>
+        <button id="register" name="registro" onclick="location.href='registro.html'">Registrarse</button>
+    </header>
+    <div class="nav">
     <h3>Viaja por la página</h3>
+    <nav>
     <ul>
         <!--pvp eliminado, meter si queda corta-->
         <li><a href="#rust">Rust</a></li>
@@ -19,10 +25,14 @@
         <li><a href="#rat">Rat Towns</a></li>
         <li><a href="#raideos">Raideos</a></li>
     </ul>
+    </nav>
+    </div>
     <br />
     <br />
     <br />
-    <h2 id="rust">Rust</h2>
+        <section id="section_rust">
+        
+        <h2 id="rust">Rust</h2>
         <h4>Qué es Rust?</h4><p>Rust, u óxido en inglés es un videojuego <strong>multijugador</strong> basado en la <strong>supervivencia</strong> en un mundo postapocalíptico, en el que tenemos
         que explorar el mapa en busca de loot, investigar el mejor sítio para hacer nuestra base, y lo más importante,
         asegurarnos de que esta sobreviva durante todo el <em><a href="actualizaciones.html">wipe</a></em> en el server en el que juguemos habitualmente </p>
@@ -34,8 +44,8 @@
 
         <hr /><p>A continuación, vamos a dejar una <strong>lista básica</strong> con los conceptos fundamentales para empezar en Rust.</p>
 
-        <ol>
-            <li>Descargar Rust en <a href="https://store.steampowered.com/app/252490/Rust/" target="_blank">Steam</a></li>
+        <ol class="lista">
+            <li>Descargar Rust en <a href="https://store.steampowered.com/app/252490/Rust/" target="_blank"><em>Steam</em></a></li>
             <li>Instalar Rust</li>
             <li>Comprar:</li>
                 <ul>
@@ -50,25 +60,29 @@
                     <li>Modificados (no recomendados si no quieres encontrarte <em><a href="actualizaciones.html" target="_blank">niños rata</a></em>)</li>
                 </ul>
             <li>Buscar tu zona para construir</li>
-            <li>Construir tu <a href="base">base</a></li>
+            <li>Construir tu <a href="base"><em>base</em></a></li>
             <li>Lootear</li>
             <li>Hacer del servidor un sitio poco pacífico (opcional)</li>
         </ol>
         <br />
+    </section>
+    <section id="section_survival">
     <h2 id="survival">Supervivencia</h2>
     <h5>Hagamos lo que hagamos, no nos olvidemos de sobrevivir.</h5>
     <p>Al fin y al cabo ese es el objetivo básico de este juego, sobrevivir. Para ello, vamos a daros unos consejos básicos</p>
-    <ul>
+    <ul class="lista">
         <li>CREATE UN SPAWN: tan pronto entres al servidor, asegúrate de conseguir tela y contruyete un saco, busca la zona para tu base y guarda tu spawn con el.</li>
         <li>ÁRMATE:Vas a spawnear con una roca, esto no sirve para defenderse, pero si para conseguir madera, hazte una lanza y podrás salvar tus primeros enfrentamientos</li>
         <li>GUARDA TU LOOT: De nada sirve robar un ak en el primer minuto de wipe, si no tienes en donde guardarla, contrúyete una choza o haz tu base starter tan pronto puedas</li>
-        <li>CUIDATE DE LA RADIACION: Rust es un mundo post-apocalíptico, en el que existe radiación, en ciertas <a href="#rat">rat towns</a> te encontrarás con mucho radio. Evítalo 
+        <li>CUIDATE DE LA RADIACION: Rust es un mundo post-apocalíptico, en el que existe radiación, en ciertas <a href="#rat"><em>rat towns</em></a> te encontrarás con mucho radio. Evítalo 
         cubriéndote con ropa, o curándote con agua.</li>
         <li>CURATE: Te vas a hacer daño, te van a intentar matar, y te vas a caer. Consigue tela, es fundamental para las vendas,
             come y bebe, si estas en un sitio reconfortante, tu salud se restaurará.
         </li>
     </ul>
     <br />
+    </section>
+    <section id="section_base">
     <h2 id="base">Construcción</h2>
     <h4>Una vez que tenemos claro los conceptos básicos del rust y como entrar a los servidores, vamos a ver como tener una choza para vivir.</h4>
     <p>Como recalcamos los últimos 20 párrafos, es imprescindible escoger una buena zona, para asegurarnos de tener loot, pvp y los recursos
@@ -77,12 +91,11 @@
     <p>Para escoger una buena zona, es imprescindible escoger como queremos jugar, si looteando, o jodiendo rusos y robándoles el equipamiento(preferible)
         Si queremos jugar de la segunda forma, nos da igual la zona con tal de que haya bases cercanas que aseguren la actividad en la zona del server.</p>
         <p>Si por el contrario queremos jugar looteando (solo para gente aburrida), buscate una zona que sea todo lo contrario a la anteior,
-            que no haya bases cercanas, que tenga alguna carretera para <em><a href="actualizaciones.html" target="_blank">barrilear</a></em> y algún <a href="#rat">monumento</a>
+            que no haya bases cercanas, que tenga alguna carretera para <em><a href="actualizaciones.html" target="_blank">barrilear</a></em> y algún <a href="#rat"><em>monumento</em></a>
         para conseguir armas, esto con la finalidad de joder a los rusos (ya nos iremos dando de cuenta de que es el propósito del juego) </p>
     <br />
     <h5>Teniendo en cuenta lo anterior, vamos a ver una tabla con las mejores zonas para vivir</h5>
-    <center>
-    <table border="2">
+    <table id="tabla_materiales">
         <th></th>
         <th>Recursos</th>
         <th>Actividad</th>
@@ -147,8 +160,6 @@
             <td colspan="5">Nuestros desarrolladores aún no provaron la zona</td>
         </tr>
     </table>
-    </center>
-    <!--foto de materiales o video de bases-->
     <h3>Una vez escogimos la zona, es hora de hacer la base</h3>
     <p>Existen miles de diseños, y ninguno es mejor que el anterior, únicamente tenemos que dejar volar nuestra imaginación
         y esconder nuestro armario lo mejor que podamos, introducir algunos peaks por si nos raidean online, y tener todo 
@@ -175,15 +186,17 @@
         <p>Adjuntamos a continuación un <abbr title="Videos de Construcción"><a href="tutoriales.html">Enlace</a></abbr> a los mejores tutoriales de la casas
         más seguras.</p>
         <br />
+    </section>
+    <section id="section_wipes">
     <h2 id="wipes">Wipes</h2>
         <h4>"Los wipes en rust son el factor más importante para mantener el juego con vida."</h4>
         <p>Esta es probablemente la frase más destacada de <em><a href="actualizaciones.html" target="_blank">FacePunch</a></em>, y que refleja la importancia de los wipes.
         Como ya explicamos anteriormente, los wipes son un reinicio completo de los servidores, tanto oficiales como de la comunidad que se realizan
-        el primer jueves de cada mes. Además, estos reinicios incluyen parches o <a href="https://rust.facepunch.com/changes">actualizaciones</a> que
+        el primer jueves de cada mes. Además, estos reinicios incluyen parches o <a href="https://rust.facepunch.com/changes"><em>actualizaciones</em></a> que
         introducen nuevos elementos, cambios de mapa, vehículos, etc. Esta particularidad, hace que el interés por el juego no decaiga,
         pero tambien implica que el juego tenga dos <strong>fases básicas:</strong></p>
         
-        <ul>
+        <ul class="lista">
             <li><em>Early Game:</em><p>Es la primera parte del wipe, en la que la gente aún no dispone de instrumentos para raidear o armas potentes
             para marcar la diferencia en el servidor. En esta parte, que suelen ser las primeras 12/24 horas, es importante que estemos el mayor 
             tiempo posible conectado al servidor, para conseguir armas lo antes posibles y poder establecerte como una "potencia" en el servidor.
@@ -195,6 +208,8 @@
             </p></li>
         </ul>
         <br />
+    </section>
+    <section id="section_tier">
     <h2 id="tier">Tier</h2>
         <h4>Acabamos de llegar a la parte donde decides tu futuro, el honor y la gloria, o ser un <em>chinofarmer</em></h4>
         <p>Rust nos permite dos modos de juego de forma no literal, el de ser un hombre y ganar los recursos matando a otros ususarios y 
@@ -210,9 +225,9 @@
                 roñoso, porque realmente este elemento puede hacerte desde la persona más rica del servidor, hasta un ludópata
                 que tiene el saco en zona segura y no sabe disparar, eso si, te conoce el algoritmo del <em>black jack</em> de pe a pa.
         </p>
-            <img src="workbench.jpg" alt="bancos de trabajo en rust" title="Bancos de trabajo" width="750" style="display: block; margin: auto;">
+            <img src="index_fotos/workbench.jpg" alt="bancos de trabajo en rust" title="Bancos de trabajo" width="750" style="display: block; margin: auto;">
         <p>Teniendo claro que es un banco de trabajo y como usarlo, vamos con los tres niveles disponibles:</p>
-        <ol>
+        <ol class="lista">
             <li>Tier 1:<p>Nos ofrece el revolver y escopetas básicas, la primera ropa y elementos básicos para raidear
                 bases de madera como mucho.
             </p></li>
@@ -224,14 +239,16 @@
                 de raideo más potentes del servidor. Tener este banco de trabajo es asegurarte el éxito durante buena parte del wipe.
                 </p></li>
         </ol>
-        <img src="scrap.jpeg" alt="Chatarra/Scrab" title="Chatarra Rust" style="display: block; margin: auto;">
+        <img src="index_fotos/scrap.jpeg" alt="Chatarra/Scrab" title="Chatarra Rust" style="display: block; margin: auto;">
     
         <br />
+    </section>
+    <section id="section_rat">
     <h2 id="rat">Rat Towns</h2>
     <h4>Para conseguir armas y equipamiento, necesitamos ir a los monumentos</h4>
     <p>Los <strong>monumentos</strong> son zonas creadas automáticamente por el juego. En ellos nos encontraremos con estructuras que tendran algún tipo de parkour 
     para poder desbloquear cajas de distinto nivel. En Rust hay 5 tipos distintos de "cajas":</p>
-        <ul>
+        <ul class="lista">
             <li><u>Barriles:</u> Contienen componentes para crafteos y 2/3 trozos de chatarra</li>
             <li><u>Cajas de herramientas:</u> Nos proporcionan items como arcos, prismático o motopicos, además de trozos de chatarra</li>
             <li><u>Cajas normales:</u> Proporcionan casi todos los elementos básicos, aunque unos con más probabilidad que otras,además, te pueden tocar escopetas y trozos de chatarra </li>
@@ -244,15 +261,15 @@
         </ul>
 
     <h3>Teniendo en cuenta como conseguir los componentes, vamos a ver la lista de las mejores rat towns</h3>        
-    <li>
+    <ul class="lista">
         <li>Plataforma petrolífera: Ambas se encuentran en el mar, la diferencia entre ambas es la facilidad
             de defenderse que otorga la petro grande mientras espera a que se desbloquee la caja hackeada
         </li>
-            <ul>
+            <ul id="lista_petro">
                 <li>Petro grande</li>
                 <li>Petro pequeña</li>
             </ul>
-            <img src="petro.jpeg" style="display: block; margin: auto;">
+            <img src="index_fotos/petro.jpeg" style="display: block; margin: auto;">
             <!--Tarjetas no-->
         <li>Carguero: No es una rat towm como tal, ya que este <em><a href="actualizaciones.html" target="_blank">spawnea</a></em> en el mar cada cierto tiempo,
         otorga hasta un máximo de tres cajas hackedas, pero suele ser el objetivo de grandes clanes de <em>rusos</em>, por lo que defenderlo es relativamente complicado</li>
@@ -269,7 +286,7 @@
         </li>
         <li>Helicóptero de Combate: Este tampoco es una rat town como tal, es un helicóptero que aparece cada cierto tiempo, pero cuidado, si estás armado te va 
             a disparar. Si consigues tirarlo, te proporcionará un loot similar al tanque, pero además cabe la posibilidad de que te dropee una M249.
-            <img src="m249.jpeg" alt="m249" title="m249" width="100" style="display:block; margin: auto;">
+            <img src="index_fotos/m249.jpeg" alt="m249" title="m249" width="100" style="display:block; margin: auto;">
         </li>
         <li>Planta potabilizadora: Esta rat town no tiene un aporte específico, pero tiene una peculiaridad, y es que en ella puede spawnear  una caja hackead, pero hay que tener cuidado en ella, puede contener 
             radiación en ciertas zonas
@@ -278,7 +295,8 @@
 
     </ol>
     <br />
-    <div style="background-image: url(fotos.dic/rusia.png); background-repeat: no-repeat; background-position: center;" >
+    </section>
+    <section id="section_raideos">
     <h2 id="raideos">Raideos</h2>
         <h1>Ha llegado el momento de eliminar a los rusos del server</h1>
         <h3>Los raideos, es un arte, para que nos vamos a engañar, puedes o hacerte rico, encontrar novia y ser un triunfador en la vida con tus crios, el perro y el chalet con piscina o perderlo todo.</h3>
@@ -288,7 +306,7 @@
             Aunque realmente, el arte del raideo se puede realizar de varias formas, lo que incluye la defensa.
         </p>
         <h4>Vamos a ver que tipos de raideos tenemos</h4>
-        <ul>
+        <ul class="lista">
             <li>Raideo</li>
             <ul>
                 <li>Online: Con los integrantes de la base conectados (+dificultad, +diversión)</li>
@@ -304,11 +322,12 @@
         <h6>Conclusión: el raideo es un arte, tiene 1000 formas de realizarse y mientras consigas tu objetivo siempre va a ser una forma correcta. Da igual el número de integrantes, si has llegado al núcleo o si
             simplemente as conseguido que los rivales se desconecten.
         </h6>
-    </div>
         <br />
+    </section>
+    <section id="section_stream">
     <h2 id="streames">Streamers</h2>
     <h4>Todo el mundo sabe, o debería, que viendo, se aprende. Es por ello que a continuación, dejamos una tabla con los horarios de los mejores streamers españoles de rust.</h4>
-    <table border="2" style="margin: auto;">
+    <table id="tabla_streamers">
         <th></th>
         <th>Lunes</th>
         <th>Martes</th>
@@ -319,7 +338,7 @@
         <th>Domingo</th>
         <tr style="text-align: center;">
             <td><a href="https://www.twitch.tv/ricoy?lang=es">Ricoy</a>
-            <img src="ricoy.png" style="display: block; margin: auto;" alt="Ricoy" title="Ricoy" width="50"></td>
+            <img src="fotos_streamers/ricoy.png" style="display: block; margin: auto;" alt="Ricoy" title="Ricoy" width="50"></td>
             <td>Stream a partir de las 19:00</td>
             <td>Stream a partir de las 20:00</td>
             <td>No stremea</td>
@@ -330,7 +349,7 @@
         </tr>
         <tr style="text-align: center;">
             <td><a href="https://www.twitch.tv/isvolcano"><abbr title="IsVolcano">IsVolcano</abbr></a>
-                <img src="volcano.png" style="display: block; margin: auto;" alt="Volcano" title="Volcano" width="50"></td>
+                <img src="fotos_streamers/volcano.png" style="display: block; margin: auto;" alt="Volcano" title="Volcano" width="50"></td>
                 <td>Stream a partir de las 14:00</td>
             <td>No stremea</td>
             <td colspan="2">Stream a partir de las 14:00</td>
@@ -338,13 +357,13 @@
         </tr>
         <tr style="text-align: center;">
             <td><a href="https://www.twitch.tv/agustabell212">Agustabell212</a>
-                <img src="agus.png" alt="Agust" style="display: block; margin: auto;" title="Agust" width="50"></td>
+                <img src="fotos_streamers/agus.png" alt="Agust" style="display: block; margin: auto;" title="Agust" width="50"></td>
                 <td colspan="3">No stremea</td>
             <td colspan="4">Stream a partir de las 19:00</td>
         </tr>
         <tr style="text-align: center;">
             <td><a href="https://www.twitch.tv/m2cg">M2cG</a>
-                <img src="m2.png" alt="m2cg" style="display: block; margin: auto;" title="m2cg" width="50"></td>
+                <img src="fotos_streamers/m2.png" alt="m2cg" style="display: block; margin: auto;" title="m2cg" width="50"></td>
                 <td>No stremea</td>
             <td>Stream sin hora</td>
             <td>Stream a partir de las 17:00</td>
@@ -353,22 +372,23 @@
         </tr>
         <tr style="text-align: center;">
             <td><a href="https://www.twitch.tv/panpots">Panpots</a>
-                <img src="panpots.png" alt="Panpots" style="display: block; margin: auto;" title="Panpots" width="50"></td>
+                <img src="fotos_streamers/panpots.png" alt="Panpots" style="display: block; margin: auto;" title="Panpots" width="50"></td>
                 <td colspan="5">Stream a partir de las 17:00</td>
             <td colspan="2">No stremea</td>
         </tr>
         <tr style="text-align: center;">
             <td><a href="https://www.twitch.tv/poionako">Poionako</a>
-                <img src="poio.png" alt="Poionako" style="display: block; margin: auto;" title="Poionako" width="50"></td>
+                <img src="fotos_streamers/poio.png" alt="Poionako" style="display: block; margin: auto;" title="Poionako" width="50"></td>
                 <td colspan="7">Stream sin hora</td>
         </tr>
     </table>
-
-    <h2 id="rust+">Rust+</h2>
+    </section>
+    <section id="section_rustplus">
+    <h2 id="rust_plus">Rust+</h2>
     <h4>Rust tiene una particularidad, nos permite ver en todo momento que pasa en nuestra base desde nuestro móvil.</h4>
 
-    <p>Para conseguir lo anteriormente citado, debemos de conectar nuestro móvil con Steam mediante <strong>Rust+</strong>, una aplica
-    ción creada por FacePunch que podemos encontrar en la <a href="https://apps.apple.com/us/app/rust/id1487691681">AppStore</a> o 
+    <p>Para conseguir lo anteriormente citado, debemos de conectar nuestro móvil con Steam mediante <strong>Rust+</strong>, una aplicación
+     creada por FacePunch que podemos encontrar en la <a href="https://apps.apple.com/us/app/rust/id1487691681">AppStore</a> o 
     <a href="https://play.google.com/store/apps/details?id=com.facepunch.rust.companion">PlayStore.</a></p>
     <img src="rust+.jpg" title="Rust+" alt="Rust+" height="300" style="display: block; margin: auto;">
     <br />
@@ -376,13 +396,12 @@
     <br />
     <br />
     <br />
-    <h6>Rust es un juego creado por el demonio para que tengas ganas de tirarte por un puente sin cuerda, por lo que os dejamos 
-        una lista de reproducción creada literalmente para evitar que leas esta página y, en caso de que la leas, no tengas la 
-        horrorosa idea de hacerme caso a lo que puse, porque vas a desperdiciar años de vida y de pelo.
-    </h6>
-
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6wDX4enMNb9RDrktJOvl1E?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
-    
+    </section>    
+    <footer>
+        <h6>Rust es un juego creado por el demonio para que tengas ganas de tirarte por un puente sin cuerda, por lo que os dejamos 
+            una lista de reproducción creada literalmente para evitar que leas esta página y, en caso de que la leas, no tengas la 
+            horrorosa idea de hacerme caso a lo que puse, porque vas a desperdiciar años de vida y de pelo.</h6>
+    </footer>
 </body>
 
 </html>
