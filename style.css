@@ -1,188 +1,77 @@
-/*LETRA DO TITULO*/
-
+/*recursos externos*/
 @font-face{
     font-family: 'RUST';
     src: url(rust/Rust.ttf);
     font-weight: bold;
     font-style: bold;
 }
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-/*MEDIA QUERY PARA DEFINIR AS PANTALLAS*/
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 50px;
-    }
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav li {
-        margin: 5px 0;
-        display: block;
-    }
-    #tabla_materiales, #tabla_streamers {
-        margin-left: 0;
-        width: 100%;
-    }
-    .form-container {
-        position: static;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .nav {
-        position: static; 
-        width: auto; 
-        border-radius: 0; 
-        padding: 10px;
-    }
-}
-@media (min-width: 601px) and /*o and saqueino de internet*/ (max-width: 1024px) {
-    header h1 {
-        font-size: 70px;
-    }
-    nav li {
-        margin-left: 10px;
-    }
-}
-@media (min-width: 1025px) {
-    body {
-        font-size: 16px; 
-    }
-    header h1 {
-        font-size: 120px;
-    }
-}
-
-/*BODY E HEADER*/
-
+/*body*/
 body{
     background-color: #0D0D0D;
     color: #F2F2F2;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:'roboto mono', monospace ;
     padding: 20px;
     margin-left: 10px;
     margin-right:10px;
+
 }
-body img{
-    border-radius: 30px;
-    padding: 20px;
-}
-body section{
-    background-color:#232526 ;
-    border-radius: 30px;
-    padding: 20px;
-    border-top: 10px;
-    margin-bottom: 30px;
-}
-header h1{
-    margin: 0 auto;
+h1{
     text-align: center;
-    font-size: 100px;
-    font-family: 'RUST';
-    color: red;
 }
 
-    /*BOTONS DE REGISTRO*/
+/*FORMULARIO*/ 
 
-button{
-    cursor: pointer;
+form{
+	width:500px;
+	padding:20px;
+	margin:auto;
 }
-#login, #register {
-    /* mover a derecha arriba */
-    background-color: white;
+form fieldset{
     border-radius: 20px;
+}
+input[type=text] {
+    font-family:'roboto mono', monospace;
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type=password] {
+    font-family:'roboto mono', monospace;
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  /*button sacado de internet*/
+  form button{
+    font-family: 'roboto mono', monospace;
+    margin-left: 45%;
+    background-color: red;
     border: none;
-    letter-spacing: 0.2px;
-    font-weight: bold;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.form-container { /*a idea do contenedor saqueina de internet, 
-    foi a unica solucion que encontrei para poder facer que os 
-    botons quedaran estaticos e non se descolocaran*/
-    position: fixed;
-    top: 20px;
-    right: 20px; 
-    display: flex;
-    flex-direction: column;
-}
-
-    /*NAVEGACION*/
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-}
-
-nav li{
-    margin: 0 10px;
-    border: 2px solid ;
-    background-color:#A6A6A6 ;
-    border-radius: 10px;
-}
-
-.nav{
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    background-color:#232526 ;
-    border-radius: 0 0 10px 10px; 
-    padding: 10px 0; 
-    text-align: center;
-}
-a{
-    padding: 10px;
-    color: #ff4a2a;
-    text-decoration: none;
+    border-radius: 30px;
+    color: black;
     font-size: bold;
-}
-a:hover{
-    color: #ff4a2a;
-}
-a:active{
-    color: #ff4a2a;
-}
-
-/*ELEMENTOS DO SECTION*/
-
-#section_rust, #section_survival, #section_base, #section_wipes, #section_tier, #section_rat, #section_raideos,
-#section_stream, #section_rustplus {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px; 
-}
-
-#tabla_materiales{
-    position:relative;
-    margin-left: 30px;
-    padding:10px;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  h4{
     text-align: center;
-    border: 2px solid;
-    border-radius: 20px;
-    background-color:#353F40;
-}
-#tabla_streamers {
-    border: 2px solid ;
-    border-radius: 20px;
-    background-color:#353F40 ;
-}
-#streamers table th,td{
-    border: 2px solid ;
-    border-radius: 20px;
-}
+  }
 
-/*FOOTER*/
-
-footer h6{
-    background-color: #232526 ;
-    letter-spacing: 1px;
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-}
+   button{
+    font-family: 'roboto mono', monospace;
+    margin-left: 40%;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    color: black;
+    font-size: bold;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
